@@ -1,3 +1,5 @@
+/* Copyright 2014 Yahoo! Inc. */
+/* Licensed under the terms of the 3-Clause BSD license. See LICENSE file in the project root for details. */
 #ifndef __JNI_HELPER_DEFINES_H__
 #define __JNI_HELPER_DEFINES_H__
 
@@ -41,7 +43,7 @@
 #ifdef JAVA_DEBUG_TYPEMAPS
 #undef NDEBUG
 #include <assert.h>
-#endif JAVA_DEBUG_TYPEMAPS
+#endif //JAVA_DEBUG_TYPEMAPS
 
 #define POINTER_TO_CONTEXT(CTX_TYPE) CTX_TYPE* context= reinterpret_cast<CTX_TYPE*>(pointer);
 #define CONTEXT_TO_POINTER(CTX) jlong pointer = reinterpret_cast<jlong>(CTX);
